@@ -18,8 +18,6 @@ def parse(puzzle_input):
 
 def part1(data):
     """Solve part 1"""
-    # horizontal_position = sum([inc for dir, inc in data if dir == 'forward'])
-    # depth = sum([inc*DEPTH_DIRECTIONS.get(dir, 0) for dir, inc in data])
     gamma_code = (sum(np.array(data))*2/len(data)).astype(int)
     
     gamma, epsilon = (bin2dec(code) for code in (gamma_code, 1-gamma_code))
