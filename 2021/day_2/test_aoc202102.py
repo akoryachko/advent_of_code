@@ -12,7 +12,14 @@ def example1():
 def test_parse_example1(example1):
     """Test that input is parsed properly"""
     print(example1)
-    assert example1 == [('forward', 5), ('down', 5), ('forward', 8), ('up', 3), ('down', 8), ('forward', 2)]
+    assert example1 == [
+        ('forward', 5),
+        ('down', 5),
+        ('forward', 8),
+        ('up', 3),
+        ('down', 8),
+        ('forward', 2)
+        ]
 
 # @pytest.mark.skip(reason="Not implemented")
 def test_part1_example1(example1):
